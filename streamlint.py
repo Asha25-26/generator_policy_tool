@@ -3,7 +3,6 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 
-# ----------------- CONFIG / CONSTANTS -----------------
 
 MASTER_COLUMNS = [
     "Sl No", "Title", "Type of document", "Publication/Adoption Date", "Country",
@@ -47,7 +46,6 @@ mapper_clim = {
 }
 
 
-# ----------------- CORE LOGIC FUNCTION -----------------
 
 def process_file(file_obj, mapper):
     """
@@ -108,7 +106,6 @@ def process_file(file_obj, mapper):
     return standardized_df
 
 
-# ----------------- STREAMLIT APP -----------------
 
 def main():
     st.title("Policy Inventory Master Dataset Builder")
@@ -168,3 +165,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
